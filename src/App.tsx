@@ -55,7 +55,7 @@ function ScrambleText({ text, isHovered, className = '' }: { text: string; isHov
 }
 
 function SquashHamburger({ open }: { open: boolean }) {
-  const spring = { type: 'spring', stiffness: 300, damping: 20 }
+  const spring = { type: 'spring' as const, stiffness: 300, damping: 20 }
   return <span className="relative block h-[12px] w-[18px] sm:h-[12px] sm:w-[18px] max-sm:h-[10px] max-sm:w-[15px]">
     <motion.span className="absolute left-0 top-0 h-[1.5px] w-full bg-white max-sm:h-[1.2px]" animate={open ? { rotate:45, y:5 } : { rotate:0, y:0 }} transition={spring} />
     <motion.span className="absolute left-0 top-[5px] h-[1.5px] w-full bg-white max-sm:top-[4px] max-sm:h-[1.2px]" animate={open ? { opacity:0, scaleX:0 } : { opacity:1, scaleX:1 }} transition={spring} />
