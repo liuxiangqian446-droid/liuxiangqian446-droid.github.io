@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --font-sans:"Space Mono",monospace; --font-serif:"Space Mono",monospace; --font-mono:"Space Mono",monospace; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html,body { background:#000; color:#fff; overflow-x:hidden; overflow-y:auto; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+body { font-family:"Space Mono",monospace; }
+.lenis.lenis-smooth { scroll-behavior:auto !important; }.lenis.lenis-stopped { overflow:hidden; }.lenis.lenis-scrolling iframe { pointer-events:none; }
+.dot-grid { background-image:radial-gradient(#fff 1px,transparent 1px); background-size:24px 24px; }
+.video-cover { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.video-shade { position:absolute; inset:0; background:linear-gradient(90deg,rgba(0,0,0,.58),rgba(0,0,0,.18) 52%,rgba(0,0,0,.5)); }
+.watermark { font-family:'Anton SC',sans-serif; background:radial-gradient(circle,rgba(142,127,148,0) 0%,#8E7F94 70%); background-clip:text; -webkit-background-clip:text; color:transparent; }
+.glass { background:rgba(255,255,255,.15); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); }
